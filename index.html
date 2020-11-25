@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Bookshelf</title>
+    </head>
+    <body>
+        <header>
+            <h1> Jesse's Bookshelf</h1>
+        </header>
+
+        <button class="addBook">Add New Book</button>
+        
+        <section id="toggle-section">
+
+            <form class = 'form hidden'>
+                <div class="input-block">
+                    <label for="title">Title</label><br>
+                    <input type="text" name="title" id="title">
+                </div>
+
+                <div class="input-block">
+                    <label for="author">Author</label><br>
+                    <input id="author" type="text" name="author">
+                </div>
+    
+                <div class="input-block">
+                    <label for="pages">Number of Pages</label><br>
+                    <input type="number" id="pages" name="pages">
+                </div>
+    
+                <div class="input-block" id="radio-container">
+                    <label for="isRead">Finished reading?</label>
+                    <div id="readStatus">
+                        <label for="book-status">Read:</label>
+                        <input type="checkbox" id="isRead" name="isRead" value=true>
+                    </div>
+                </div>
+                <div class = "formButtons">
+                    <button type="submit" id ="submit">Add Book</button>
+                    <button type="cancel" id="cancel">cancel</button>
+                </div>
+            </form>
+
+        </section>
+        <section class="container" id="bookshelf"></section>
+
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
